@@ -1,5 +1,5 @@
 @import './decimals';
-@mixin line-height($lh, $fs) {
+@mixin font($lh, $fs) {
   font-size: $fs;
   line-height: decimal-round($lh / $fs);
 }

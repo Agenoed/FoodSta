@@ -1,0 +1,9 @@
+.btn {
+  font-family: $main-font;
+  font-weight: 500;
+  @include font(20, 13);
+
+  border-radius: 30px;
+  cursor: pointer;
+  color: $txt-clr;
+}
