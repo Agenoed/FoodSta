@@ -11,7 +11,7 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        
+        min-width: 0;
     }
 }
 
@@ -80,22 +80,8 @@
 
 }
 
-.hero__right-wrap {
-    position: fixed;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 89px;
-
-        right: 40px;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-top: 14px;
-    }
 
 
-}
 
 .swiper__img {
     @media screen and (max-width: 767px) {
