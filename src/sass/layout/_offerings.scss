@@ -1,9 +1,18 @@
 .offerings {
-    background-image: url(../images/offerings/offerings-bg-img@1x_sm.jpg);
-    background-repeat: no-repeat;
-    width: 320px;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 60px;
+
+    background-image: url(../images/offerings/offerings-bg-img@1x_sm.jpg);
+    background-color: $second-accent-clr;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+    min-width: 320px;
+    min-height: 100%;
+    
+    
 }
 
 .offerings__container {
@@ -64,14 +73,14 @@
     color: $txt-clr;
 
     margin-bottom: 28px;
-    max-width: 272px;
+    
 }
 
 .content-offerings__list {
     @extend %reset-list;
     
     margin-bottom: 28px;
-    max-width: 252px;
+    
 }
 // list
 
@@ -134,14 +143,21 @@
 }
 
 .btn--offerings {
-    background-color: white;
-    border: 2px solid $btn-border;
-
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 22px;
     padding-left: 22px;
+
     margin-right: 24px;
+
+    background-color: white;
+    border: 2px solid $btn-border;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus { 
+        border: 2px solid #597D00;
+    }
 }
 
 .content-offerings__link {
