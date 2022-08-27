@@ -9,7 +9,7 @@
         </a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="header__item">
+            <li class="nav__item">
               <a href="#header" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
@@ -28,14 +28,15 @@
         </nav>
       </div>
       <div class="footer__subscribe-wrap">
-        <h3 class="footer__title">Subscribe</h3>
         <form class="form">
+          <label for="subscribe-footer">Subscribe</label>
           <input
             class="form__input"
             type="email"
             name="email"
             placeholder="Enter your email"
             required
+            id="subscribe-footer"
           />
 
           <button class="btn footer-btn--border-clr" type="submit">
@@ -43,7 +44,8 @@
           </button>
         </form>
         <p class="footer__text">
-          By subscribing you agree to with our Privacy Policy
+          By subscribing you agree to with our
+          <a href="" class="footer__text-link">Privacy Policy</a>
         </p>
       </div>
     </div>
