@@ -5,25 +5,36 @@
         <use href="./images/icons.svg#icon-logo"></use>
       </svg>
     </a>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="#header" class="header__link">Home</a>
-        </li>
-        <li class="header__item">
-          <a href="#favorite" class="header__link">About</a>
-        </li>
-        <li class="header__item">
-          <a href="#offerings" class="header__link">Service</a>
-        </li>
-        <li class="header__item">
-          <a href="#favorites" class="header__link">Menu</a>
-        </li>
-        <li class="header__item">
-          <a href="#subscribe" class="header__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="header__btn btn" type="button">Order Now</button>
+    <button
+      class="header__mobile-menu js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="28" height="28">
+        <use href="./images/icons.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="header__right-side">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#header" class="nav__link nav__link--current">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#favorite" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#offerings" class="nav__link">Service</a>
+          </li>
+          <li class="nav__item">
+            <a href="#favorites" class="nav__link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#subscribe" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn btn" type="button">Order Now</button>
+    </div>
   </div>
 </header>
