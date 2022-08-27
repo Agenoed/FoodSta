@@ -1,4 +1,8 @@
-.offerings {}
+.offerings {
+    background-image: url(../images/offerings/offerings-bg-img@1x_sm.jpg);
+    background-repeat: no-repeat;
+    max-width: 480px;
+}
 
 .offerings__container {
     @extend %container;
@@ -40,6 +44,38 @@
 
 .list-content-offerings__item {
     color: $txt-clr;
+
+    &:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+
+        margin-bottom: 8px;
+
+    }
+
+    &:nth-child(1)::before {
+        content: '';
+        background: url(../images/offerings/icon-rocket.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: white;
+    }
+
+        &:nth-child(2)::before {
+            content: '';
+            background: url(../images/offerings/icon-touch.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: white;
+        }
 }
 
 .list-content-offerings__subtitle {
