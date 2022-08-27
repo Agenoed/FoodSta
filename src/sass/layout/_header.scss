@@ -1,3 +1,41 @@
+.header {
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
 .header__container {
   @extend %container;
+  display: flex;
+  align-items: center;
+}
+.header__mobile-menu {
+  margin-left: auto;
+  border: none;
+  background-color: inherit;
+  fill: $btn-border;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header__right-side {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 28px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.header__btn {
+  min-width: 100px;
+  height: 32px;
+
+  border: none;
+
+  font-weight: 400;
+  @include font(21, 14);
+
+  background-color: $accent-clr;
+  &:focus,
+  &:hover {
+    background-color: #b5ff00;
+  }
 }
