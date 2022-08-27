@@ -4,3 +4,65 @@
     @extend %container;
 }
 
+// apples
+
+.offerings__aside {}
+
+// content
+.offerings__content {
+    .content-offerings {}
+}
+
+.content-offerings__heading {
+    font-size: 28px;
+    @include font(33px, 28px);
+    color: $txt-clr;
+}
+
+.content-offerings__text {
+    font-size: 14px;
+    @include font(16px, 14px);
+    color: $txt-clr;
+}
+
+.content-offerings__list {
+    @extend %reset-list;
+}
+// list
+
+// .list-content-offerings {}
+
+.list-content-offerings__item {
+    color: $txt-clr;
+}
+
+.list-content-offerings__subtitle {
+    font-size: 18px;
+    @include font(21px, 18px);
+}
+
+.list-content-offerings__text {
+    font-size: 14px;
+    @include font(16px, 14px);
+}
+
+// btn
+.btn--offerings {
+    background-color: white;
+    border: 2px solid $btn-border;
+}
+
+// link
+.offerings__link {
+    .link-offerings {
+        @extend %reset-link;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        @include font(20px, 14px);
+    }
+}
+
+.link-offerings__text {}
+
+.link-offerings__icon {}
