@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.hero-slider', {
   // Optional parameters
   direction: 'vertical',
   loop: true,
@@ -9,4 +9,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
