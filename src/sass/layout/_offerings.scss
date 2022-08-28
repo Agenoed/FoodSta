@@ -29,24 +29,95 @@
 
 // apples
 
-.offerings__aside {}
+.offerings__aside {
+    @media screen and (max-width: 767px) {
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
 
-.aside-offerings__canvas {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            margin-bottom: 60px;
+        }
+}
+
+.aside-offerings__canvas:nth-child(1) {
     display: block;
-
-    margin: 0 auto;
-    margin-bottom: 40px;
     
     width: 280px;
     height: 309px;
-
-    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
 
     background-image: url(../images/offerings/offerings-img@1x_sm.png), radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%), url(../images/offerings/offerings-ellipse-s.svg), url(../images/offerings/offerings-border-s.svg);
     background-repeat: no-repeat;
     background-size: 201px 255px, 128px 44px, 255px 255px, 280px 280px;
     background-position: right 50% top -13px, right 50% bottom 18%, center, center;
+
+    @media screen and (max-width: 767px) {
+            margin: 0 auto;
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 29px;
+
+        width: 357px;
+        height: 394px;
+
+        background-image: url(../images/offerings/offerings-img-1@1x_md.png), radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%), url(../images/offerings/offerings-ellipse-m.svg), url(../images/offerings/offerings-border-m.svg);
+        
+            background-repeat: no-repeat;
+            background-size: 257px 326px, 163px 56px, 326px 326px, 357px 357px;
+            background-position: 54px 0, 100px 290px, 15px 52px, 0 37px;
     
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/offerings/offerings-img-1@2x_md.png), radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%), url(../images/offerings/offerings-ellipse-m.svg), url(../images/offerings/offerings-border-m.svg);
+                
+            }
+    
+        }
+    
+}
+
+.aside-offerings__canvas:nth-child(2) {
+    display: block;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 44px;
+        width: 166px;
+        
+        background-image: url(../images/offerings/offerings-img-2@1x_md.png);
+        background-size: 166px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/offerings/offerings-img-2@2x_md.png);  
+            }
+
+    }
+
+}
+
+.aside-offerings__canvas:nth-child(3) {
+    display: block;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 108px;
+    
+            background-image: url(../images/offerings/offerings-img-3@1x_md.png);
+            background-size: 108px;
+            background-repeat: no-repeat;
+            background-position: center;
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/offerings/offerings-img-3@2x_md.png);
+            }
+    
+        }
+
 }
 // content
 .offerings__content {
