@@ -14,7 +14,13 @@
             background-image: url(../images/offerings/offerings-bg-s.svg);
         }
     
-    
+    @media screen and (min-width: 768px) {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background-image: url(../images/offerings/offerings-bg-m.svg);
+            min-width: 768px;
+
+        }
 }
 
 .offerings__container {
@@ -53,6 +59,13 @@
 
     margin-bottom: 28px;
     max-width: 280px;
+
+    @media screen and (min-width: 768px) {
+        @include font(49px, 42px);
+        margin-bottom: 20px;
+        max-width: 526px;
+            
+        }
 }
 
 .content-offerings__text {
@@ -60,6 +73,13 @@
     color: $txt-clr;
 
     margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+            @include font(19px, 16px);
+            max-width: 500px;
+
+            margin-bottom: 40px;
+        }
     
 }
 
@@ -67,6 +87,13 @@
     @extend %reset-list;
     
     margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+
+            display: flex;
+            gap: 116px;
+        }
     
 }
 // list
@@ -76,9 +103,11 @@
 .list-content-offerings__item {
     color: $txt-clr;
 
-    &:not(:last-child) {
-        margin-bottom: 28px;
-    }
+    @media screen and (max-width: 767px) {
+            &:not(:last-child) {
+                    margin-bottom: 28px;
+                }
+        }
 
     &::before {
         content: '';
