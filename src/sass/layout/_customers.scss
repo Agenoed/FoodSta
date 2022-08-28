@@ -1,24 +1,23 @@
 .customer__section {
-margin-left: 20px;
-margin-right: 20px;
-}
-.customer__block {
-@extend %container;
-width: 320px;
 background-image: url("../images/customers/customers-bg-img@1x_320.jpg");
 background-repeat: no-repeat;
+@extend %container;
+width: 320px;
+}
+.customer__block {
 padding-top: 60px;
-padding-bottom: 62px;
+padding-bottom: 60px;
 }
 .customer__header {
 margin-bottom: 20px;
-color: rgba(44, 44, 44, 1);
+color: $txt-clr;
 font-style: bold;
 font-size: 28px;
 line-height: 1.17;
 text-align: left;
 vertical-align: top;
 text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+font-weight: 700;
 }
 .customer__text {
 margin: 0;
@@ -28,7 +27,7 @@ font-size: 14px;
 line-height: 1.14;
 text-align: left;
 vertical-align: top;
-color: rgba(44, 44, 44, 1);
+color: $txt-clr;
 }
 .customer__list {
 padding: 0;
@@ -41,7 +40,8 @@ font-size: 16px;
 line-height: 1.18;
 text-align: left;
 vertical-align: top;
-color: rgba(44, 44, 44, 1);
+color: $txt-clr;
+font-weight: 700px;
 }
 .customer__item {
 list-style-type: none;
@@ -56,7 +56,6 @@ padding-bottom: 0;
 }
 .customer__item:not(:last-child) {
 margin-bottom: 24px;
-border: 1px solid rgba(0, 0, 0, 1);
 }
 .customer__information {
 margin: 0;
@@ -75,31 +74,31 @@ display: inline-flex;
 padding: 0;
 }
 .customer__mark-div {
-    display: flex;
-    align-items: left;
-    margin: 0;
-    padding: 0;
+display: flex;
+align-items: left;
+margin: 0;
+padding: 0;
 }
 .customer__mark-item {
-    padding: 0;
-    list-style-type: none;
+padding: 0;
+list-style-type: none;
 }
 .customer__mark-link {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    background-position: 50% 50%;
+display: flex;
+justify-content: left;
+align-items: left;
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+background-position: 50%;
+background-repeat: no-repeat;
+object-fit: cover;
+background-position: 50% 50%;
 }
 .customer_mark-svg {
-    width: 17px;
-    height: 16px;
+width: 17px;
+height: 16px;
 }
 .customer__picture {
 width: 48px;
