@@ -2,7 +2,9 @@
 background-image: url("../images/customers/customers-bg-img@1x_320.jpg");
 background-repeat: no-repeat;
 @extend %container;
-width: 320px;
+background-size: cover;
+min-width: 320px;
+background-position: bottom;
 }
 .customer__block {
 padding-top: 60px;
@@ -46,25 +48,21 @@ font-weight: 700px;
 .customer__item {
 list-style-type: none;
 display: block;
-height: 247px;
 background-color: #FFFFFF;
 border-radius: 0px 20px 20px 20px;
-padding-left: 8px;
-padding-right: 8px;
-padding-top: 8px;
-padding-bottom: 0;
+padding: 8px;
 }
 .customer__item:not(:last-child) {
 margin-bottom: 24px;
 }
 .customer__information {
+align-items: center;
 margin: 0;
 padding: 0;
 width: 160px;
 height: 52px;
 display: flex;
 border-right: 1px solid rgba(126, 177, 1, 1);
-padding-top: 6.35px;
 }
 .customer__mark-list {
 width: 100px;
@@ -103,9 +101,7 @@ height: 16px;
 .customer__picture {
 width: 48px;
 height: 48px;
-border-radius: 50%;
 overflow: hidden;
-border: 2px solid yellow;
 margin-right: 16px;
 }
 .customer__picture--first {
@@ -130,4 +126,8 @@ text-align: left;
 vertical-align: top;
 color: rgba(44, 44, 44, 1);
 margin: 0;
+}
+.customer__information-text {
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
