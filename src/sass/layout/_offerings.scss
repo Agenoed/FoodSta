@@ -48,7 +48,6 @@
 }
 
 .content-offerings__heading {
-    font-size: 28px;
     @include font(33px, 28px);
     color: $txt-clr;
 
@@ -57,7 +56,6 @@
 }
 
 .content-offerings__text {
-    font-size: 14px;
     @include font(16px, 14px);
     color: $txt-clr;
 
@@ -112,14 +110,12 @@
 }
 
 .list-content-offerings__subtitle {
-    font-size: 18px;
     @include font(21px, 18px);
 
     margin-bottom: 16px;
 }
 
 .list-content-offerings__text {
-    font-size: 14px;
     @include font(16px, 14px);
 }
 
@@ -127,7 +123,6 @@
 
 .content-offerings__buttons {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -152,7 +147,6 @@
 .content-offerings__link {
     @extend %reset-link;
     display: block;
-    font-size: 14px;
     @include font(20px, 14px);
 
     display: flex;
