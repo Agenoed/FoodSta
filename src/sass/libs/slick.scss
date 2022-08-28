@@ -1,0 +1,62 @@
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+
+// @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+.carousel {
+  padding: 0 50px;
+  width: 580px;
+  height: 580px;
+
+  &__img {
+    max-width: 480px;
+    margin: 0 auto;
+    border: 26px solid $second-accent-clr;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: none;
+  background-color: none;
+  padding: 0;
+  cursor: pointer;
+
+  font-size: 0;
+
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+
+  &::before {
+    display: table;
+  }
+}
+.slick-prev {
+  left: 0;
+  &::before {
+    content: '';
+    background-image: url(../images/hero/hero-icon-left.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 48px;
+    height: 48px;
+  }
+}
+.slick-next {
+  right: 0;
+  &::before {
+    content: '';
+    background-image: url(../images/hero/hero-icon-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    width: 48px;
+    height: 48px;
+  }
+}
