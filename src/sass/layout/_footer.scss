@@ -107,6 +107,9 @@
     margin-top: 12px;
     @include font(14, 12);
   }
+    @media screen and (min-width: 1280px) {
+      margin-top: 15px;
+    }
 }
 .footer__text-link {
   color: $btn-border;
@@ -194,4 +197,11 @@
     }        
 }
 
+.form__error {
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+  }
+
+    
+}
 
