@@ -79,28 +79,27 @@
        
 }
 
-.subscribe-footer {
-    margin-bottom: 12px;
-     
-}
-
 .footer__label-text {
+    @include font(21, 14);
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(21 / 14);
-
+    
     @media screen and (min-width: 768px) {
         display: block;
     }
 }
 
 .footer-btn--border-clr {
-    width: 103px;
+    min-width: 103px;
     height: 42px;
 
     background-color: #FFFFFF;
     border: 0.854167px solid $btn-border;
     border-radius: 30px;
+
+    &:focus,
+    &:hover {
+        border-color: #597D00;
+    }
     
     @media screen and (max-width: 767px) {
         margin-left: auto;
@@ -108,13 +107,12 @@
     
 }
 
-.form-input--decor {
+.form__input--decor {
     height: 42px;
     padding: 12px;
-        
-    font-size: 12px;
-    line-height: calc(18 / 12);
-            
+
+    @include font(18, 12);
+                    
     background-color: #FFFFFF;
     border: 0.854167px solid $second-accent-clr;
     border-radius: 30px;
@@ -129,15 +127,13 @@
 .footer__text {
     margin-top: 20px;
 
-    font-size: 10px;
-    line-height: calc(12 / 10);
-    
+    @include font(12, 10);
+   
      color: $txt-clr;
     
     @media screen and (min-width: 768px) {
         margin-top: 12px;
-        font-size: 12px;
-        line-height: calc(14 / 12);
+        @include font(14, 12);
     }
 }
 .footer__text-link {
@@ -154,30 +150,29 @@
 }
 
 .footer__link {
-    font-size: 10px;
-    line-height: calc(12 / 10);
+    @include font(12, 10);
+    
 
     color: $btn-border;
     @media screen and (min-width: 768px) {
-        font-size: 12px;
-        line-height: calc(14 / 12);
+        @include font(14, 12);
+        
     }
 }
 
-.footer_copyright {
-    font-size: 10px;
-    line-height: calc(12 / 10);
-
+.footer__copyright {
+    @include font(12, 10);
+    
     color: $txt-clr;
    
     @media screen and (max-width: 767px) {
-        margin-top: 46px;
+        margin-top: 40px;
         text-align: center;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 12px;
-        line-height: calc(14 / 12);
+        @include font(14, 12);
+        
     }
 }
 
@@ -188,3 +183,4 @@
     }
    
 }
+
