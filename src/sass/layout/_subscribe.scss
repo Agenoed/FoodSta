@@ -1,0 +1,99 @@
+.section__subscribe {
+    @extend %container;
+    
+}
+.subscribe__img {
+    
+    height: auto;
+    position: relative;
+    
+
+    @media screen and (min-width: 480px) {
+      min-width: 320px;
+    width: 280px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px; 
+  }
+  @media screen and (min-width: 768px) {
+    width: 281px;
+    
+    position: absolute;
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 608px;
+  }
+}
+  
+
+.tittle__subscribe {
+font-weight: 700;
+  @include font(50, 42);
+  margin-bottom: 20px;
+}
+.discription__subscribe {
+  overflow: auto;
+  font-weight: 400;
+  @include font(24, 16);
+  margin-bottom: 24px;
+}
+
+.subscribe--input {
+  width: 395px;
+  @media screen and (min-width: 480px){
+    width: 278px;
+   
+  }
+} 
+/*.form__error {
+  color: #FF705D;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+
+}
+input{
+  outline: none;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: #7EB101;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: #FF705D ;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+
+-*/>
+.subscribe__button {
+
+  min-width: 103px;
+  height: 42px;
+  border: none;
+  font-weight: 500;
+  @include font(20, 13);
+  background-color: $accent-clr;
+  &:focus,
+  &:hover {
+  background-color: #b5ff00;
+  }
+margin-left: 27px;
+
+ @media screen and (min-width: 480px) {
+  
+  margin-top: 20px;
+ 
+ }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
