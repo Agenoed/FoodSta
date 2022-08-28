@@ -1,7 +1,12 @@
 .nav__list {
   @extend %reset-list;
   display: flex;
-  gap: 28px;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 28px;
+  }
 }
 .nav__link {
   @extend %reset-link;
@@ -10,13 +15,11 @@
 
   color: $txt-clr;
   &--current {
-    font-weight: 700;
     text-decoration: underline;
     color: $accent-clr;
   }
   &:hover,
   &:focus {
-    font-weight: 700;
     text-decoration: underline;
     color: $accent-clr;
   }
