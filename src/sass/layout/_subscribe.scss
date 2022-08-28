@@ -1,24 +1,21 @@
 .section__subscribe {
-    @extend %container;
-    
+  @extend %container;
 }
 .subscribe__img {
-    
-    height: auto;
-    position: relative;
-    
+  height: auto;
+  position: relative;
 
-    @media screen and (min-width: 480px) {
-      min-width: 320px;
+  @media screen and (min-width: 480px) {
+    min-width: 320px;
     width: 280px;
     display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 20px; 
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
   }
   @media screen and (min-width: 768px) {
     width: 281px;
-    
+
     position: absolute;
     padding-bottom: 20px;
   }
@@ -26,10 +23,9 @@
     width: 608px;
   }
 }
-  
 
 .tittle__subscribe {
-font-weight: 700;
+  font-weight: 700;
   @include font(50, 42);
   margin-bottom: 20px;
 }
@@ -42,11 +38,10 @@ font-weight: 700;
 
 .subscribe--input {
   width: 395px;
-  @media screen and (min-width: 480px){
+  @media screen and (min-width: 480px) {
     width: 278px;
-   
   }
-} 
+}
 /*.form__error {
   color: #FF705D;
   text-align: left;
@@ -71,9 +66,8 @@ input:invalid:not(:placeholder-shown) + .form__error {
   display: block;
 }
 
--*/>
+-*/
 .subscribe__button {
-
   min-width: 103px;
   height: 42px;
   border: none;
@@ -82,17 +76,14 @@ input:invalid:not(:placeholder-shown) + .form__error {
   background-color: $accent-clr;
   &:focus,
   &:hover {
-  background-color: #b5ff00;
+    background-color: #b5ff00;
   }
-margin-left: 27px;
+  margin-left: 27px;
 
- @media screen and (min-width: 480px) {
-  
-  margin-top: 20px;
- 
- }
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+  }
   @media screen and (min-width: 768px) {
-
   }
   @media screen and (min-width: 1280px) {
   }
