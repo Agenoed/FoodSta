@@ -1,16 +1,18 @@
 .offerings {
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 60px;
 
-    background-image: url(../images/offerings/offerings-bg-img@1x_sm.jpg);
-    background-color: $second-accent-clr;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: url(../images/offerings/offerings-bg-xs.svg);
     
-
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     min-width: 320px;
-    min-height: 100%;
+    height: 100%;
+
+    @media screen and (min-width: 480px) {
+            background-image: url(../images/offerings/offerings-bg-s.svg);
+        }
     
     
 }
@@ -23,35 +25,22 @@
 
 .offerings__aside {}
 
-.border {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-
-    background-color: transparent;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 60px;
-
-}
-
-.canvas {
-    width: 255px;
-    height: 255px;
-    border-radius: 50%;
-    background-color: white;
-
-    display: flex;
-    justify-content: center;   
-}
-
-.img {
+.aside-offerings__canvas {
     display: block;
-    align-self: flex-end;
+
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    width: 280px;
+    height: 309px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+
+    background-image: url(../images/offerings/offerings-img@1x_sm.png), radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%), url(../images/offerings/offerings-ellipse-s.svg), url(../images/offerings/offerings-border-s.svg);
+    background-repeat: no-repeat;
+    background-size: 201px 255px, 128px 44px, 255px 255px, 280px 280px;
+    background-position: right 50% top -13px, right 50% bottom 18%, center, center;
+    
 }
 // content
 .offerings__content {
