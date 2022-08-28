@@ -89,6 +89,7 @@
 
 .form__input--decor {
   
+
   @media screen and (min-width: 768px) {
     width: 279px;
     margin-top: 12px;
@@ -104,12 +105,10 @@
   color: $txt-clr;
 
   @media screen and (min-width: 768px) {
-    margin-top: 12px;
+    margin-top: 15px;
     @include font(14, 12);
   }
-    @media screen and (min-width: 1280px) {
-      margin-top: 15px;
-    }
+    
 }
 .footer__text-link {
   color: $btn-border;
@@ -198,10 +197,12 @@
 }
 
 .form__error {
-  @media screen and (min-width: 1280px) {
+      
+  @media screen and (min-width: 768px) {
     position: absolute;
   }
 
     
 }
+
 
