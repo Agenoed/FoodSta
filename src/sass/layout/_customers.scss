@@ -4,7 +4,11 @@ background-repeat: no-repeat;
 @extend %container;
 background-size: cover;
 min-width: 320px;
+max-width: 479px;
 background-position: bottom;
+@media screen and (min-width: 480px) {
+background-image: url("../images/customers/mobile_480.svg");
+}
 }
 .customer__block {
 padding-top: 60px;
