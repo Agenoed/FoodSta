@@ -1,4 +1,186 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
 
 .footer__container {
     @extend %container;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @media screen and (min-width: 768px) {
+        gap:  100px;
+    }
+        @media screen and (min-width: 1280px) {
+            gap: 80px;
+        }
 }
+
+.footer__nav-wrap {
+    display: flex;
+    gap: 81px;
+    
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+        gap: 114px;
+    }
+        @media screen and (min-width: 1280px) {
+            gap: 145px;
+        }
+}
+
+
+.footer__left-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    
+    @media screen and (min-width: 1280px) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    
+}
+
+.nav-list--decor {
+    @extend %reset-list;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 28px;
+            }
+    
+}
+.nav-link--decor {
+    @extend %reset-link;
+    
+}
+
+.form--decor {
+    color: $txt-clr;
+      
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+       
+}
+
+.footer__label-text {
+    @include font(21, 14);
+    font-weight: 500;
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+.footer-btn--border-clr {
+    min-width: 103px;
+    height: 42px;
+
+    background-color: #FFFFFF;
+    border: 0.854167px solid $btn-border;
+    border-radius: 30px;
+
+    &:focus,
+    &:hover {
+        border-color: #597D00;
+    }
+    
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+    }
+    
+}
+
+.form__input--decor {
+    height: 42px;
+    padding: 12px;
+
+    @include font(18, 12);
+                    
+    background-color: #FFFFFF;
+    border: 0.854167px solid $second-accent-clr;
+    border-radius: 30px;
+    
+    @media screen and (min-width: 768px) {
+        width: 279px;
+        margin-top: 12px;
+        margin-right: 13px;
+    }
+}
+
+.footer__text {
+    margin-top: 20px;
+
+    @include font(12, 10);
+   
+     color: $txt-clr;
+    
+    @media screen and (min-width: 768px) {
+        margin-top: 12px;
+        @include font(14, 12);
+    }
+}
+.footer__text-link {
+    color: $btn-border;
+}
+
+.footer__list {
+    @extend %reset-list;
+    display: flex;
+    gap: 32px;
+    @media screen and (min-width: 768px) {
+        gap: 20px;
+    }
+}
+
+.footer__link {
+    @include font(12, 10);
+    
+
+    color: $btn-border;
+    @media screen and (min-width: 768px) {
+        @include font(14, 12);
+        
+    }
+}
+
+.footer__copyright {
+    @include font(12, 10);
+    
+    color: $txt-clr;
+   
+    @media screen and (max-width: 767px) {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        @include font(14, 12);
+        
+    }
+}
+
+.footer__right-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+
