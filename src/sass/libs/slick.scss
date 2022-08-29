@@ -3,13 +3,13 @@
 // @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 .carousel {
-  padding: 0 50px;
-  width: 580px;
-  height: 580px;
+  position: relative;
 
+  padding: 0 50px;
+  width: 320px;
   &__img {
-    max-width: 480px;
-    margin: 0 auto;
+    max-width: 292px;
+    // margin: 0 auto;
     border: 26px solid $second-accent-clr;
     border-radius: 50%;
     overflow: hidden;
