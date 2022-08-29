@@ -1,5 +1,5 @@
 .favorites {
-    @media screen and (max-width:767) {
+    @media screen and (max-width:767px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -7,10 +7,15 @@
 
 .favorites__container {
     @extend %container;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .favorites__title {
-    @media screen and (max-width:767) {
+    @media screen and (max-width:767px) {
         font-family: $main-font;
         font-weight: 700;
         font-size: 28px;
@@ -21,7 +26,7 @@
 }
 
 .favorites__text {
-    @media screen and (max-width:767) {
+    @media screen and (max-width:767px) {
         font-family: $main-font;
         font-weight: 400;
         font-size: 14px;
@@ -35,26 +40,41 @@
     @extend %reset-list;
     padding: 29px;
 
-    @media screen and (max-width:767) {
+    @media screen and (max-width:767px) {
         display: block;
+
     }
 }
 
 .favorites__item {
-
-    // border: 14px solid #FFE550;
-    // border-radius: 50%;
-}
-
-.favorites__item .fav-item {
     display: block;
 
-    @media screen and (max-width:767) {
-        display: none;
-    }
 }
 
-.favorits-img {
-    border: 14px solid #FFE550;
-    border-radius: 50%;
+.favorites-box {
+    @media screen and (max-width:767px) {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 280px;
+        height: 282px;
+        border: 11px solid #ffe550;
+        border-radius: 50%;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: #BBF330;
+    }
+
+}
+
+.fav-item {
+    display: block;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
