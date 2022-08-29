@@ -12,6 +12,7 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 
     @media screen and (min-width:767px) {}
 }
@@ -19,10 +20,8 @@
 .favorites__title {
 
     @include font(33, 28);
-    font-weight: 700;
-    font-size: 28px;
     text-align: center;
-    color: #2C2C2C;
+    color: $txt-clr;
 
     @media screen and (min-width:767px) {}
 }
@@ -30,29 +29,22 @@
 .favorites__text {
 
     @include font(16, 14);
-    font-weight: 400;
-    font-size: 14px;
     line-height: calc(16/14);
     text-align: center;
-    color: #2C2C2C;
+    color: $txt-clr;
+    margin-bottom: 60px;
 
     @media screen and (min-width:767px) {}
 }
 
 .favorites__list {
     @extend %reset-list;
-    justify-content: center;
-    align-items: center;
-    padding: 29px;
-    // display: flex;
-    flex-direction: column;
 
     @media screen and (min-width:767px) {}
 }
 
 .favorites__item {
-    display: block;
-
+    gap: 20px
 }
 
 .favorites__box {
@@ -62,24 +54,15 @@
     overflow: hidden;
     width: 280px;
     height: 282px;
-    border: 11px solid #ffe550;
+    border: 11px solid $second-accent-clr;
     border-radius: 50%;
-    margin-bottom: 20px;
 
     @media screen and (min-width:767px) {}
 
 
     &:hover,
     &:focus {
-        $accent-clr: #bbf330;
+        border-color: $accent-clr;
     }
 
-}
-
-.fav-item {
-    display: block;
-
-    @media screen and (max-width:767px) {
-        display: none;
-    }
 }
