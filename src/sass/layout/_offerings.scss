@@ -2,14 +2,34 @@
     padding-top: 41px;
     padding-bottom: 60px;
 
+    background-image: url(../images/offerings/offerings-bg-xs.svg);
+    
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-width: 320px;
+    height: 100%;
+
+    @media screen and (min-width: 480px) {
+            background-image: url(../images/offerings/offerings-bg-s.svg);
+            min-width: 480px;
+        }
+
     @media screen and (min-width: 768px) {
             padding-top: 150px;
             padding-bottom: 100px;
+
+            background-image: url(../images/offerings/offerings-bg-m.svg);
+            min-width: 768px;
+            
         }
 
     @media screen and (min-width: 1280px) {
             padding-top: 177px;
             padding-bottom: 43px;
+
+            background-image: url(../images/offerings/offerings-bg-l.svg);
+            background-size: 1280px;
         }
 }
 
@@ -21,28 +41,6 @@
             align-items: center;
             gap: 90px;
         }    
-
-        background-image: url(../images/offerings/offerings-bg-xs.svg);
-        
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        min-width: 320px;
-        height: 100%;
-
-         @media screen and (min-width: 480px) {
-             background-image: url(../images/offerings/offerings-bg-s.svg);
-         }
-    
-         @media screen and (min-width: 768px) {
-             background-image: url(../images/offerings/offerings-bg-m.svg);
-             min-width: 768px;
-         }
-    
-         @media screen and (min-width: 1280px) {
-             background-image: url(../images/offerings/offerings-bg-l.svg);
-             min-width: 1280px;
-         }
 }
 
 // apples
