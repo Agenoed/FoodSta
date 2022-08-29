@@ -38,8 +38,6 @@
 
     @media screen and (min-width: 1280px) {
             display: flex;
-            align-items: center;
-            gap: 90px;
         }    
 }
 
@@ -56,6 +54,10 @@
     @media screen and (max-width: 1279px) {
              margin-bottom: 60px;
          }
+
+    @media screen and (min-width: 1280px) {
+            margin-right: 90px;
+        }
 }
 
 .aside-offerings__canvas {
@@ -133,9 +135,11 @@
     }
 }
 // content
-// .offerings__content {
-//     .content-offerings {}
-// }
+// .offerings__content {}
+
+.content-offerings {
+     padding-top: 83px;
+ }
 
 .content-offerings__heading {
     @include font(33px, 28px);
