@@ -44,13 +44,6 @@
 // apples
 
 .offerings__aside {
-    @media screen and (max-width: 767px) {
-            margin: 0 auto;
-        }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        }
-
     @media screen and (max-width: 1279px) {
              margin-bottom: 60px;
          }
@@ -138,7 +131,9 @@
 // .offerings__content {}
 
 .content-offerings {
-     padding-top: 83px;
+    @media screen and (min-width: 1280px) {
+            padding-top: 83px;
+        }
  }
 
 .content-offerings__heading {
@@ -239,7 +234,7 @@
     margin-bottom: 16px;
 
     @media screen and (min-width: 1280px) {
-        @include font(24px, 17px); 
+        @include font(25px, 18px); 
     }
 }
 
@@ -277,7 +272,7 @@
         border: 2px solid #597D00;
     }
 
-    @media screen and (max-width: 1999px) {
+    @media screen and (max-width: 1279px) {
             margin-right: 24px;
         }
 }
