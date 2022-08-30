@@ -7,10 +7,13 @@
 
 .hero__container {
   @extend %container;
+  position: relative;
   display: flex;
 }
 .hero__slider {
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .hero__title {
   margin-bottom: 28px;
@@ -20,6 +23,7 @@
   color: $txt-clr;
 
   @media screen and (min-width: 768px) {
+    max-width: 537px;
     margin-bottom: 44px;
 
     @include font(50, 42);
@@ -37,6 +41,7 @@
   @include font(21, 14);
 
   @media screen and (min-width: 768px) {
+    max-width: 336px;
     margin-bottom: 40px;
 
     @include font(24, 16);
