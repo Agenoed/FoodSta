@@ -1,47 +1,39 @@
 .customer__section {
   background-image: url('../images/customers/mobile_320.svg');
   background-repeat: no-repeat;
-  @extend %container;
   background-size: cover;
   min-width: 320px;
   background-position: bottom;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 480px) {
     background-image: url('../images/customers/mobile_480.svg');
   }
   @media screen and (min-width: 768px) {
     background-image: url('../images/customers/tablet.svg');
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url('../images/customers/desktop.svg');
-  }
-}
-.customer__block {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
     padding-bottom: 120px;
   }
   @media screen and (min-width: 1280px) {
+    background-image: url('../images/customers/desktop.svg');
+    background-size: 1280px;
     padding-bottom: 200px;
   }
+}
+.customer__block {
+  @extend %container;
 }
 .customer__header {
   margin-bottom: 20px;
   color: $txt-clr;
-  font-style: bold;
   @include font(33, 28);
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  font-weight: 700;
   @media screen and (min-width: 768px) {
     @include font(49, 42);
   }
 }
 .customer__text {
   margin-bottom: 32px;
-  font-style: regular;
   @include font(16, 14);
   color: $txt-clr;
-  font-weight: 400;
   @media screen and (min-width: 768px) {
     @include font(19, 16);
   }
@@ -50,23 +42,20 @@
   @extend %reset-list;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
 .customer__review {
-  margin-bottom: 40px;
-  font-style: bold;
+  margin-bottom: 42px;
   @include font(19, 16);
   color: $txt-clr;
-  font-weight: 700px;
   @media screen and (min-width: 768px) {
     @include font(21, 18);
+    margin-bottom: 44px;
   }
 }
 .customer__item {
   background-color: #ffffff;
-  border-radius: 0px 20px 20px 20px;
+  border-radius: 0px 30px 30px 30px;
   padding: 8px;
   min-width: 280px;
   @media screen and (min-width: 768px) {
@@ -95,17 +84,17 @@
   height: 52px;
   display: flex;
   border-right: 0.854167px solid $btn-border;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    border-right: 1px solid $btn-border;
+  }
 }
 .customer__mark-list {
   height: 16px;
   margin-bottom: 28px;
   display: inline-flex;
   @extend %reset-list;
-}
-.customer__mark-div {
-  display: flex;
-  align-items: left;
-  justify-content: left;
 }
 .customer__mark-svg {
   width: 17px;
@@ -118,43 +107,28 @@
   margin-right: 16px;
 }
 .customer__picture--first {
-  background-image: url('../images/customers/customers-img-1@1x.png');
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/customers/customers-img-1@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-img-1@2x.png);
-      background-size: 48px;
-    }
+  background-image: url(../images/customers/customers-img-1@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers/customers-img-1@2x.png);
+    background-size: 48px;
   }
 }
 .customer__picture--second {
-  background-image: url('../images/customers/customers-img-2@1x.png');
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/customers/customers-img-2@1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/customers/customers-img-2@2x.png);
-      background-size: 48px;
-    }
+  background-image: url(../images/customers/customers-img-2@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/customers/customers-img-2@2x.png);
+    background-size: 48px;
   }
 }
 .customer__name {
-  font-style: semi-bold;
   @include font(21, 14);
   color: $txt-clr;
-  font-weight: 500;
 }
 .customer__position {
-  font-style: regular;
   @include font(21, 14);
   color: $txt-clr;
-  margin: 0;
-  font-weight: 400;
-}
-.customer__information-text {
-  padding-top: 6px;
-  padding-bottom: 6px;
 }
