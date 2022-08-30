@@ -15,12 +15,15 @@
     border-radius: 50%;
     overflow: hidden;
   }
+  &:hover &__img,
+  &:focus &__img {
+    border-color: $accent-clr;
+  }
   @media screen and (min-width: 1280px) {
     top: -145px;
     width: 680px;
     &__img {
       max-width: 580px;
-      // margin: 0 auto;
       border: 26px solid $second-accent-clr;
       border-radius: 50%;
       overflow: hidden;
