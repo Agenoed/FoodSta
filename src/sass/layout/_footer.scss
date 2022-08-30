@@ -53,16 +53,16 @@
 .form--decor {
   color: $txt-clr;
 
-  @media screen and (max-width: 767px) {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
 }
 
 .footer__label-text {
   @include font(21, 14);
   font-weight: 500;
+  display: block;
+  
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -79,22 +79,34 @@
 
   &:focus,
   &:hover {
-    border-color: #597d00;
+    background-color: $second-accent-clr;
   }
 
   @media screen and (max-width: 767px) {
+    display: block;
     margin-left: auto;
+    margin-top: 20px;
   }
+
 }
 
 .form__input--decor {
-  
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     width: 279px;
     margin-top: 12px;
     margin-right: 13px;
   }
+}
+
+.form__error {
+position: absolute;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
+
+
 }
 
 .footer__text {
@@ -196,13 +208,8 @@
     }        
 }
 
-.form__error {
-      
-  @media screen and (min-width: 768px) {
-    position: absolute;
-  }
 
-    
-}
+
+
 
 
