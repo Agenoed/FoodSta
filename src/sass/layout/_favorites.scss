@@ -23,6 +23,7 @@
     @include font(33, 28);
     text-align: center;
     color: $txt-clr;
+    margin-bottom: 20px;
 
     @media screen and (min-width:767px) {}
 }
@@ -46,7 +47,11 @@
 }
 
 .favorites__item {
-    gap: 20px
+    @media screen and (min-width: 767px) {
+        &:nth-child(n + 4) {
+            display: none;
+        }
+    }
 }
 
 .favorites__box {
@@ -70,10 +75,10 @@
 
 }
 
-.fav-item {
-    display: block;
+// .fav-item {
+//     display: block;
 
-    @media screen and (max-width:767px) {
-        display: none;
-    }
-}
+//     @media screen and (max-width:767px) {
+//         display: none;
+//     }
+// }
