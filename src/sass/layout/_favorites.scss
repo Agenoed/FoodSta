@@ -3,18 +3,30 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 768px) {}
 }
 
 .favorites__container {
     @extend %container;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: -16px;
+    // display: flex;
+    // flex-direction: column;
 
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        align-items: flex-start;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
 }
 
 .favorites__title {
@@ -24,33 +36,72 @@
     color: $txt-clr;
     margin-bottom: 20px;
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 768px) {
+        @include font(49, 42);
+    }
+
+
 }
 
 .favorites__text {
 
     @include font(16, 14);
-    line-height: calc(16/14);
     text-align: center;
     color: $txt-clr;
     margin-bottom: 60px;
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 768px) {
+        @include font(19, 16);
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+
 }
 
 .favorites__list {
     @extend %reset-list;
 
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    @media screen and (min-width: 768px) {
+        // margin: 16px;
+        gap: 16px;
+        flex-basis: calc((100% - 16px)/2);
+    }
+
+    @media screen and (min-width: 1280px) {
+        // margin: 16px;
+        gap: 16px;
+        flex-basis: calc((100% - 16px)/3);
+    }
 }
 
 .favorites__item {
+
+    @media screen and (min-width: 767px) {
+        margin-bottom: 16px;
+
+    }
+
     @media screen and (max-width: 767px) {
-        &:nth-child(n + 4) {
+        margin-bottom: 20px;
+    }
+
+    &:nth-child(n + 4) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
             display: none;
+
         }
     }
+
 }
 
 .favorites__box {
@@ -62,10 +113,18 @@
     height: 282px;
     border: 11px solid $second-accent-clr;
     border-radius: 50%;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    margin: auto;
 
-    @media screen and (min-width:768px) {}
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        height: 338px;
+    }
 
+    @media screen and (min-width: 1280px) {
+        width: 392px;
+        height: 397px;
+    }
 
     &:hover,
     &:focus {
