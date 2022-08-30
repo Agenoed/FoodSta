@@ -1,45 +1,101 @@
 .section__subscribe {
   @extend %container;
+  margin-bottom: 60px;
+@media screen and (min-width: 768px){
+  margin-bottom: 100px;
 }
-.subscribe__img {
-  height: auto;
-  position: relative;
+}
+/*-
+{
+ display: flex;
+  width: 608px;
 
-  @media screen and (min-width: 480px) {
-    min-width: 320px;
+}
+-*/
+.banana__img {
+  display: inline-flex;
+padding-bottom: 17px;
     width: 280px;
-    display: flex;
+    height: auto;
+    display:block;
+  margin-left:auto;
+  margin-right:0px;
+  margin-top:auto;
+  margin-bottom:0px;
+    /*
     align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
-  }
+    padding-bottom: 20px; -*/
+  
   @media screen and (min-width: 768px) {
     width: 281px;
+    height: 136px;
 
-    position: absolute;
+    align-items: flex-end;
     padding-bottom: 20px;
   }
   @media screen and (min-width: 1280px) {
     width: 608px;
+    height: 266px;
+   position: relative;
+   top: 200px;
+  right: 0;
   }
 }
 
 .tittle__subscribe {
+  width: 280px;
   font-weight: 700;
-  @include font(50, 42);
+  @include font(34, 28);
   margin-bottom: 20px;
+  
+
+   @media screen and (min-width: 768px) {
+    width: 656px;
+@include font(50, 42);
+   }
+  
+  @media screen and (min-width: 1280px) {
+
+  }
+
+ 
 }
 .discription__subscribe {
+  width: 280px;
   overflow: auto;
   font-weight: 400;
-  @include font(24, 16);
-  margin-bottom: 24px;
-}
+  @include font(16, 14);
+  margin-bottom: 40px;
 
-.subscribe--input {
+
+
+ @media screen and (min-width: 768px) {
+  width: 656px;
+ @include font(24, 16);
+ }
+ 
+
+   @media screen and (min-width: 1280px) {
+
+   }
+}
+.subscribe__form {
+  position: relative;
+  
+
+}
+.subscribe-input {
+  width: 279px; 
+  margin-bottom: 20px;
+  
+  
+  @media screen and (min-width: 768px) {
   width: 395px;
-  @media screen and (min-width: 480px) {
-    width: 278px;
+  }
+
+  @media screen and (min-width: 1280px) {
+
   }
 }
 /*.form__error {
@@ -74,17 +130,21 @@ input:invalid:not(:placeholder-shown) + .form__error {
   font-weight: 500;
   @include font(20, 13);
   background-color: $accent-clr;
+  display:block;
+  margin-left:auto;
+  margin-right:0px;
+  margin-top:auto;
+  margin-bottom:0px;
+  
+  @media screen and (min-width: 768px) {
+display: inline;
+    margin-left: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 32px;
+  }
   &:focus,
   &:hover {
     background-color: #b5ff00;
-  }
-  margin-left: 27px;
-
-  @media screen and (min-width: 480px) {
-    margin-top: 20px;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
   }
 }
