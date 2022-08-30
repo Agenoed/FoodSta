@@ -59,18 +59,15 @@
     width: 280px;
     height: 309px;
 
-    background-image: url(../images/offerings/offerings-img@1x_sm.png), radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%), url(../images/offerings/offerings-ellipse-s.svg), url(../images/offerings/offerings-border-s.svg);
+    background-image: url(../images/offerings/offerings-img-1@1x_sm.png);
     background-repeat: no-repeat;
-    background-size: 201px 255px, 128px 44px, 255px 255px, 280px 280px;
-    background-position: 42px 0, 79px 226px, 12px 41px, 0 29px;
+    background-size: 280px 309px;
+    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(../images/offerings/offerings-img@2x_sm.png),
-            radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%),
-            url(../images/offerings/offerings-ellipse-s.svg),
-            url(../images/offerings/offerings-border-s.svg);
+        background-image: url(../images/offerings/offerings-img-1@2x_sm.png);
     }
 
     @media screen and (max-width: 767px) {
@@ -82,23 +79,17 @@
         height: 394px;
 
         background-image: url(../images/offerings/offerings-img-1@1x_md.png),
-            radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%),
-            url(../images/offerings/offerings-ellipse-m.svg),
-            url(../images/offerings/offerings-border-m.svg),
             url(../images/offerings/offerings-img-2@1x_md.png),
             url(../images/offerings/offerings-img-3@1x_md.png);
 
         background-repeat: no-repeat;
-        background-size: 257px 326px, 163px 56px, 326px 326px, 357px 357px, 166px 210px, 108px 136px;
-        background-position: 54px 0, 100px 290px, 15px 52px, 0 37px, 386px 116px, 596px 190px;
+        background-size: 357px 394px, 166px 210px, 108px 136px;
+        background-position: 0 0, 386px 116px, 596px 190px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../images/offerings/offerings-img-1@2x_md.png),
-                radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%),
-                url(../images/offerings/offerings-ellipse-m.svg),
-                url(../images/offerings/offerings-border-m.svg),
                 url(../images/offerings/offerings-img-2@2x_md.png),
                 url(../images/offerings/offerings-img-3@2x_md.png);
         }
@@ -108,22 +99,16 @@
         width: 550px;
         height: 604px;
 
-        background-image: url(../images/offerings/offerings-img@1x_lg.png),
-            radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%),
-            url(../images/offerings/offerings-ellipse-l.svg),
-            url(../images/offerings/offerings-border-l.svg);
+        background-image: url(../images/offerings/offerings-img-1@1x_l.png);
 
         background-repeat: no-repeat;
-        background-size: 396px 502px, 252px 87px, 502px 502px, 550px 550px;
-        background-position: 84px 0, 155px 443px, 24px 79px, 0 55px;
+        background-size: 550px 604px;
+        background-position: center;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../images/offerings/offerings-img@2x_lg.png),
-                radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%),
-                url(../images/offerings/offerings-ellipse-l.svg),
-                url(../images/offerings/offerings-border-l.svg);
+            background-image: url(../images/offerings/offerings-img-1@2x_l.png);
         }
     }
 }
