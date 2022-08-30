@@ -45,6 +45,7 @@
   }
 }
 .customer__review {
+  display: block;
   margin-bottom: 42px;
   @include font(19, 16);
   color: $txt-clr;
