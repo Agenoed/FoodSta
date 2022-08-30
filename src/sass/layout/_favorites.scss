@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 }
 
 .favorites__container {
@@ -14,7 +14,7 @@
     flex-direction: column;
 
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 }
 
 .favorites__title {
@@ -24,7 +24,7 @@
     color: $txt-clr;
     margin-bottom: 20px;
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 }
 
 .favorites__text {
@@ -35,14 +35,14 @@
     color: $txt-clr;
     margin-bottom: 60px;
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 }
 
 .favorites__list {
     @extend %reset-list;
 
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 }
 
 .favorites__item {
@@ -64,7 +64,7 @@
     border-radius: 50%;
     margin-bottom: 20px;
 
-    @media screen and (min-width:767px) {}
+    @media screen and (min-width:768px) {}
 
 
     &:hover,
