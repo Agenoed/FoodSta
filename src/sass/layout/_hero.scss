@@ -1,61 +1,53 @@
 .hero {
-  @media screen and (max-width: 1279px) {
-    padding-top: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 159px;
   }
 }
 
 .hero__container {
   @extend %container;
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    min-width: 0;
-  }
+  display: flex;
 }
-
+.hero__slider {
+  margin-left: auto;
+}
 .hero__title {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: calc(33 / 28);
+  margin-bottom: 28px;
+
+  @include font(33, 28);
 
   color: $txt-clr;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    // width: 537px;
-    font-size: 42px;
-    line-height: calc(50 / 42);
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+
+    @include font(50, 42);
   }
   @media screen and (min-width: 1280px) {
-    // width: 503px;
+    max-width: 502px;
+    margin-bottom: 28px;
 
-    font-size: 48px;
+    @include font(58, 48);
   }
 }
 
 .hero__text {
-  margin-top: 28px;
   margin-bottom: 28px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(21 / 14);
+  @include font(21, 14);
 
   @media screen and (min-width: 768px) {
-    margin-top: 44px;
     margin-bottom: 40px;
-    width: 336px;
 
-    font-size: 16px;
-    line-height: calc(21 / 14);
+    @include font(24, 16);
   }
   @media screen and (min-width: 1280px) {
-    margin-top: 28px;
-    // width: 502px;
+    max-width: 502px;
   }
 }
 
 .hero__btn {
-  width: 98px;
+  min-width: 98px;
   height: 32px;
 
   border-color: transparent;
@@ -64,11 +56,5 @@
   &:hover,
   &:focus {
     background-color: #b5ff00;
-  }
-}
-
-.hero__left-wrap {
-  @media screen and (min-width: 1280px) {
-    margin-top: 159px;
   }
 }

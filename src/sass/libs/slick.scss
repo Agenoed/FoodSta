@@ -4,11 +4,20 @@
 
 .carousel {
   position: relative;
-
   padding: 0 50px;
-  width: 320px;
+  @media screen and (min-width: 1280px) {
+    top: -145px;
+    width: 680px;
+    &__img {
+      max-width: 580px;
+      // margin: 0 auto;
+      border: 26px solid $second-accent-clr;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
   &__img {
-    max-width: 292px;
+    max-width: 580px;
     // margin: 0 auto;
     border: 26px solid $second-accent-clr;
     border-radius: 50%;
@@ -23,9 +32,7 @@
 
   border: none;
   background-color: none;
-  padding: 0;
   cursor: pointer;
-
   font-size: 0;
 
   background-color: white;
@@ -37,26 +44,29 @@
   }
 }
 .slick-prev {
-  left: 0;
+  z-index: 100;
+  left: 36px;
   &::before {
     content: '';
     background-image: url(../images/hero/hero-icon-left.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 19px;
     background-position: 50% 50%;
-    width: 48px;
-    height: 48px;
+    width: 39px;
+    height: 40px;
+    padding: 0;
   }
 }
 .slick-next {
-  right: 0;
+  z-index: 100;
+  right: 36px;
   &::before {
     content: '';
     background-image: url(../images/hero/hero-icon-right.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 19px;
     background-position: 50% 50%;
-    width: 48px;
-    height: 48px;
+    width: 39px;
+    height: 40px;
   }
 }
