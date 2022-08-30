@@ -86,8 +86,6 @@
   display: flex;
   border-right: 0.854167px solid $btn-border;
   @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1280px) {
     border-right: 1px solid $btn-border;
   }
 }
