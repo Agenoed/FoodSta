@@ -1,0 +1,54 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" data-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form">
+      <div class="modal-form__group" role="group">
+        <span class="modal-form__title">Order Form</span>
+
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">Name</span>
+          <input
+            class="modal-form__field form__input"
+            type="text"
+            name="user-mane"
+            placeholder="Your name"
+            required
+          />
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">Phone number</span>
+          <input
+            class="modal-form__field form__input"
+            type="tel"
+            name="user-tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+          />
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">E-mail</span>
+          <input
+            class="modal-form__field form__input"
+            type="email"
+            name="user-email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <span class="form__error">
+            <svg class="error__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Framesvg"></use>
+            </svg>
+            Please enter a valid email address</span
+          >
+        </label>
+      </div>
+
+      <button class="btn btn--decor" type="submit">Send</button>
+    </form>
+  </div>
+</div>
