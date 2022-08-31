@@ -1,0 +1,156 @@
+
+.section__subscribe {
+  margin-bottom: 60px;
+@media screen and (min-width: 768px){
+  margin-bottom: 100px;
+}
+}
+
+.subscribe__container {
+@extend %container;
+ @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+/*-
+{
+ display: flex;
+  width: 608px;
+
+}
+-*/
+.subscribe__banana {
+  margin-bottom: 17px;
+    width: 280px;
+    height: auto;
+    display:block;
+  margin-bottom:0px;
+    /*
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px; -*/
+  
+  @media screen and (min-width: 768px) {
+    width: 281px;
+    height: 136px;
+    margin-left:auto;
+    
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 608px;
+    height: 266px;
+   position: relative;
+   top: 200px;
+  right: 0;
+  }
+}
+
+.subscribe__tittle {
+  width: 280px;
+  
+  @include font(34, 28);
+  margin-bottom: 20px;
+  
+
+   @media screen and (min-width: 768px) {
+    width: 656px;
+@include font(50, 42);
+   }
+  
+  @media screen and (min-width: 1280px) {
+
+  }
+
+ 
+}
+.subscribe__discription {
+  width: 280px;
+ 
+  @include font(16, 14);
+  margin-bottom: 40px;
+
+
+
+ @media screen and (min-width: 768px) {
+  width: 656px;
+ @include font(24, 16);
+ margin-bottom: 24px;
+ }
+ 
+
+   @media screen and (min-width: 1280px) {
+
+   }
+}
+.subscribe__form {
+  position: relative;
+  
+
+}
+.subscribe-input {
+  width: 279px; 
+  margin-bottom: 20px;
+  
+  
+  @media screen and (min-width: 768px) {
+  width: 395px;
+  }
+
+  @media screen and (min-width: 1280px) {
+
+  }
+}
+/*.form__error {
+  color: #FF705D;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+
+}
+input{
+  outline: none;
+}
+
+input:valid:not(:placeholder-shown) {
+  border-color: #7EB101;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: #FF705D ;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+
+-*/
+.subscribe__button {
+  min-width: 103px;
+  height: 42px;
+  border: none;
+ 
+  @include font(20, 13);
+  background-color: $accent-clr;
+  display:block;
+  margin-left:auto;
+  margin-right:0px;
+  margin-top:auto;
+  margin-bottom:0px;
+  
+  @media screen and (min-width: 768px) {
+display: inline;
+    margin-left: 22px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 32px;
+  }
+  &:focus,
+  &:hover {
+    background-color: #b5ff00;
+  }
+}
+
