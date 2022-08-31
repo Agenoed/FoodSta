@@ -49,9 +49,11 @@
   @media screen and (min-width: 768px) {
     width: 656px;
     @include font(50, 42);
+  
   }
 
   @media screen and (min-width: 1280px) {
+    margin-top: 0;
   }
 }
 .subscribe__discription {
@@ -78,9 +80,11 @@
 
   @media screen and (min-width: 768px) {
     width: 395px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
   }
 }
 
