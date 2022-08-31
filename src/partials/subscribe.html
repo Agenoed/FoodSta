@@ -3,15 +3,15 @@
     <div class="subscribe__banana">
       <img
         class="subscribe__img"
-        srcset="./images/subscribe/subscribe-img@1x_lg.png,
-                  ./images/subscribe/subscribe-img@1x_md.png,
-                  ./images/subscribe/subscribe-img@1x_sm.png,
-                  ./images/subscribe/subscribe-img@2x_lg.png,
-                  ./images/subscribe/subscribe-img@2x_md.png,
-                  ./images/subscribe/subscribe-img@2x_sm.png
+        srcset="./images/subscribe/subscribe-img@1x_lg.png 608w ,
+                  ./images/subscribe/subscribe-img@1x_md.png 281w, 
+                  ./images/subscribe/subscribe-img@1x_sm.png 280w ,
+                  ./images/subscribe/subscribe-img@2x_lg.png 1216w ,
+                  ./images/subscribe/subscribe-img@2x_md.png 562w ,
+                  ./images/subscribe/subscribe-img@2x_sm.png 560w 
                 "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-        src="./images/subscribe/subscribe-img@1x_lg.png"
+                sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 320px) 280px, 100vw"
+        src="./images/subscribe/subscribe-img@1x_md.png"
         alt="banana"
       />
     </div>
@@ -31,7 +31,7 @@
         autocomplete="off"
         required
       />
-      <span class="form__error">
+      <span class="form__error subscribe__error">
         <svg class="error__icon" width="12" height="12">
           <use href="./images/icons.svg#icon-Framesvg"></use>
         </svg>

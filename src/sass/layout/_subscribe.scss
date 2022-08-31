@@ -22,7 +22,7 @@
 
 .subscribe__banana {
   position: absolute;
-  top: -105px;
+  top: -122px;
   display: block;
   width: 280px;
 
@@ -87,6 +87,12 @@
     margin-bottom: 0;
   }
 }
+ .subscribe__error {
+@media screen and (min-width: 768px) {
+  position: absolute;
+}
+
+ }
 
 .subscribe__button {
   min-width: 103px;
