@@ -1,0 +1,95 @@
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+
+// @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+.carousel {
+  position: absolute;
+  right: 0;
+  top: 89px;
+  padding: 0 50px;
+  width: 420px;
+  &__img {
+    max-width: 320px;
+    // margin: 0 auto;
+    border: 14px solid $second-accent-clr;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  &:hover &__img,
+  &:focus &__img {
+    border-color: $accent-clr;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -145px;
+    width: 680px;
+    &__img {
+      max-width: 580px;
+      border: 26px solid $second-accent-clr;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  font-size: 0;
+
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  @media screen and (min-width: 1280px) {
+    border-radius: 4px;
+  }
+  &::before {
+    display: table;
+  }
+}
+.slick-prev {
+  z-index: 100;
+  left: 36px;
+  &::before {
+    content: '';
+    background-image: url(../images/hero/hero-icon-left.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 50%;
+    width: 27px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 36px;
+    &::before {
+      background-size: 19px;
+      width: 39px;
+      height: 40px;
+    }
+  }
+}
+.slick-next {
+  z-index: 100;
+  right: 36px;
+  &::before {
+    content: '';
+    background-image: url(../images/hero/hero-icon-right.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 50% 50%;
+    width: 27px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 36px;
+    &::before {
+      background-size: 19px;
+      width: 39px;
+      height: 40px;
+    }
+  }
+}

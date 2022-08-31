@@ -1,4 +1,69 @@
-.hero__container {
-    @extend %container;
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 159px;
+  }
 }
 
+.hero__container {
+  @extend %container;
+  position: relative;
+  display: flex;
+}
+.hero__slider {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.hero__title {
+  margin-bottom: 28px;
+
+  @include font(33, 28);
+
+  color: $txt-clr;
+
+  @media screen and (min-width: 768px) {
+    max-width: 537px;
+    margin-bottom: 44px;
+
+    @include font(50, 42);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 502px;
+    margin-bottom: 28px;
+
+    @include font(58, 48);
+  }
+}
+
+.hero__text {
+  margin-bottom: 28px;
+  @include font(21, 14);
+
+  @media screen and (min-width: 768px) {
+    max-width: 336px;
+    margin-bottom: 40px;
+
+    @include font(24, 16);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 502px;
+  }
+}
+
+.hero__btn {
+  min-width: 98px;
+  height: 32px;
+
+  border-color: transparent;
+  background-color: $accent-clr;
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+}

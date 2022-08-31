@@ -5,12 +5,15 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
+@import './libs/slick.scss';
+
 @import './base/reset';
 
 @import './components/buttons';
 @import './components/nav';
 @import './components/mobile-menu';
 @import './components/form';
+@import './components/modal';
 
 @import './layout/header';
 @import './layout/hero';
