@@ -1,19 +1,40 @@
 <section class="section__subscribe" id="subscribe">
   <div class="subscribe__container">
     <div class="subscribe__banana">
-      <img
-        class="subscribe__img"
-        srcset="./images/subscribe/subscribe-img@1x_lg.png 608w ,
-                  ./images/subscribe/subscribe-img@1x_md.png 281w, 
-                  ./images/subscribe/subscribe-img@1x_sm.png 280w ,
-                  ./images/subscribe/subscribe-img@2x_lg.png 1216w ,
-                  ./images/subscribe/subscribe-img@2x_md.png 562w ,
-                  ./images/subscribe/subscribe-img@2x_sm.png 560w 
-                "
-                sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 320px) 280px, 100vw"
-        src="./images/subscribe/subscribe-img@1x_md.png"
-        alt="banana"
-      />
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_lg.png 1x,
+            ./images/subscribe/subscribe-img@2x_lg.png 2x
+          "
+          type="image/jpg"
+        />
+        <!-- tablet -->
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_md.png 1x,
+            ./images/subscribe/subscribe-img@2x_md.png 2x
+          "
+          type="image/jpg"
+        />
+        <!-- mobil -->
+        <source
+          media="(max-width: 479px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_sm.png 1x,
+            ./images/subscribe/subscribe-img@2x_sm.png 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          src="./images/subscribe/subscribe-img@1x_sm.png "
+          alt="banana"
+          width="280px"
+        />
+      </picture>
     </div>
 
     <h2 class="subscribe__tittle">Subscribe To Get Special Offers</h2>

@@ -22,10 +22,12 @@
 
 .subscribe__banana {
   position: absolute;
-  top: -122px;
+  top: -85px;
   display: block;
   width: 280px;
-
+  @media screen and (min-width: 480px) {
+    top: -136px;
+  }
   @media screen and (min-width: 768px) {
     top: -136px;
     right: 0;
@@ -49,7 +51,6 @@
   @media screen and (min-width: 768px) {
     width: 656px;
     @include font(50, 42);
-  
   }
 
   @media screen and (min-width: 1280px) {
@@ -76,23 +77,20 @@
 }
 .subscribe-input {
   width: 279px;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     width: 395px;
-    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 0;
   }
 }
- .subscribe__error {
-@media screen and (min-width: 768px) {
-  position: absolute;
+.subscribe__error {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
 }
-
- }
 
 .subscribe__button {
   min-width: 103px;
@@ -104,7 +102,7 @@
   display: block;
   margin-left: auto;
   margin-right: 0px;
-  margin-top: auto;
+  margin-top: 20px;
   margin-bottom: 0px;
 
   @media screen and (min-width: 768px) {
