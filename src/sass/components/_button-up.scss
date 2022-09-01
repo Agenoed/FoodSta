@@ -1,0 +1,29 @@
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+  &--no-transparency {
+    background-color: $accent-clr;
+  }
+}
+.button-up__link {
+  @extend %reset-link;
+  display: none;
+  padding: 20px;
+  &::before {
+    content: '\21E7';
+  }
+  .button-up--no-transparency & {
+    display: flex;
+  }
+}
