@@ -1,33 +1,35 @@
 .form__input {
-    height: 42px;
-    padding: 12px;
+  height: 42px;
+  padding: 12px;
 
-    @include font(18, 12);
+  @include font(18, 12);
 
-    border: 0.854167px solid $second-accent-clr;
-    border-radius: 30px;
-    background-color: #ffffff;
-    outline: none;
-
+  border: 0.854167px solid $second-accent-clr;
+  border-radius: 30px;
+  background-color: #ffffff;
+  outline: none;
 }
 
 .form__input:not(:placeholder-shown):required:valid {
-    border-color: $btn-border;
+  border-color: $btn-border;
 }
 
 .form__input:not(:placeholder-shown):required:invalid {
-    border-color: #FF705D;
+  border-color: #ff705d;
 }
 
 .form__error {
-    color: #FF705D;
-    text-align: left;
-    font-size: 12px;
-    margin-top: 1px;
-    display: none;
-    
+  color: #ff705d;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 1px;
+  display: none;
+  position: absolute;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+  }
 }
 
-.form__input:invalid:not(:placeholder-shown)+.form__error {
-    display: block;
+.form__input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
 }
