@@ -1,0 +1,69 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" data-modal-close>
+      <svg width="11" height="11">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form">
+      <div class="modal-form__group" role="group">
+        <span class="modal-form__title">Order Form</span>
+
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">Name</span>
+          <input
+            class="modal-form__field form__input"
+            type="text"
+            name="user-mane"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+          />
+          <span class="form__error">
+            <svg class="error__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Framesvg"></use>
+            </svg>
+            The name must be between 3 and 25 characters</span
+          >
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">Phone number</span>
+          <input
+            class="modal-form__field form__input"
+            type="tel"
+            name="phone"
+            placeholder="+38(000)000-00-00"
+            required
+            id="phone"
+          />
+          <span class="form__error">
+            <svg class="error__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Framesvg"></use>
+            </svg>
+            This phone must be in the format 099 000 00 00</span
+          >
+        </label>
+        <label class="modal-form__label">
+          <span class="modal-form__subtitle">E-mail</span>
+          <input
+            class="modal-form__field form__input"
+            type="email"
+            name="user-email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <span class="form__error">
+            <svg class="error__icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-Framesvg"></use>
+            </svg>
+            Please enter a valid email address</span
+          >
+        </label>
+      </div>
+
+      <button class="btn btn--decor" type="submit">Send</button>
+    </form>
+  </div>
+</div>
