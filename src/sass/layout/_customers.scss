@@ -8,10 +8,10 @@
   padding-bottom: 60px;
   @media screen and (min-width: 480px) {
     background-image: url('../images/customers/mobile_480.svg');
+    padding-bottom: 120px;
   }
   @media screen and (min-width: 768px) {
     background-image: url('../images/customers/tablet.svg');
-    padding-bottom: 120px;
   }
   @media screen and (min-width: 1280px) {
     background-image: url('../images/customers/desktop.svg');
@@ -70,6 +70,9 @@
 }
 .customer__item:not(:last-child) {
   margin-bottom: 24px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 48px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 32px;
     margin-bottom: 0px;
