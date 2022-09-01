@@ -76,10 +76,12 @@
   background-color: #ffffff;
   border: 0.854167px solid $btn-border;
   border-radius: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
     background-color: $second-accent-clr;
+    
   }
 
   @media screen and (max-width: 767px) {
