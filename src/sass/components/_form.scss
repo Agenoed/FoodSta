@@ -8,17 +8,17 @@
   border-radius: 30px;
   background-color: #ffffff;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:not(:placeholder-shown):required:valid {
   border-color: $btn-border;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
 }
 
 .form__input:not(:placeholder-shown):required:invalid {
   border-color: #ff705d;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__error {
