@@ -1,11 +1,40 @@
 <section class="section__subscribe" id="subscribe">
   <div class="subscribe__container">
     <div class="subscribe__banana">
-      <img
-        class="subscribe__img"
-        src="./images/subscribe/subscribe-img@1x_lg.png"
-        alt="banana"
-      />
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_lg.png 1x,
+            ./images/subscribe/subscribe-img@2x_lg.png 2x
+          "
+          type="image/jpg"
+        />
+        <!-- tablet -->
+        <source
+          media="(min-width: 480px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_md.png 1x,
+            ./images/subscribe/subscribe-img@2x_md.png 2x
+          "
+          type="image/jpg"
+        />
+        <!-- mobil -->
+        <source
+          media="(max-width: 479px)"
+          srcset="
+            ./images/subscribe/subscribe-img@1x_sm.png 1x,
+            ./images/subscribe/subscribe-img@2x_sm.png 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          src="./images/subscribe/subscribe-img@1x_sm.png "
+          alt="banana"
+          width="280px"
+        />
+      </picture>
     </div>
 
     <h2 class="subscribe__tittle">Subscribe To Get Special Offers</h2>
@@ -23,7 +52,7 @@
         autocomplete="off"
         required
       />
-      <span class="form__error">
+      <span class="form__error subscribe__error">
         <svg class="error__icon" width="12" height="12">
           <use href="./images/icons.svg#icon-Framesvg"></use>
         </svg>
