@@ -22,5 +22,10 @@
   &:focus {
     text-decoration: underline;
     color: $accent-clr;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
+
+    
   }
 }
